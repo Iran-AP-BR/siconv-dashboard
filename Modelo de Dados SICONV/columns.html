@@ -1,0 +1,4465 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>bd_portal Database</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.5 -->
+  <link rel="stylesheet" href="bower/admin-lte/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower/ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+  <!-- Code Mirror -->
+  <link rel="stylesheet" href="bower/codemirror/codemirror.css">
+  <!-- Fonts -->
+  <link href='fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+  <link href='fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="bower/admin-lte/dist/css/AdminLTE.min.css">
+  <!-- Salvattore -->
+  <link rel="stylesheet" href="bower/salvattore/salvattore.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="bower/admin-lte/dist/css/skins/_all-skins.min.css">
+  <!-- SchemaSpy -->
+  <link rel="stylesheet" href="schemaSpy.css">
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="bower/html5shiv/html5shiv.min.js"></script>
+  <script src="bower/respond/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><b>bd_portal</b> Database</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Tables <span class="sr-only">(current)</span></a></li>            
+			<!--<li><a href="components.html" title="List of system components">Components</a></li>-->
+			<li><a href="columns.html" title="All of the columns in the schema">Columns</a></li>
+			<li><a href="constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+			<li><a href="relationships.html" title="Diagram of table relationships">Relationships</a></li>
+			<li><a href="orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>				
+			<li><a href="anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Navbar Right Menu -->
+
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+  <!-- Main content -->
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+          <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>Columns</h1>
+      </section>
+      <!-- Main content -->
+      <section class="content">
+		<div class="box box-primary">
+			<div class="box-header with-border">
+			  <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+              <h3 class="box-title">Columns</h3>
+            </div>	
+            <div class="box-body">
+				<table id="column_table" class="table table-bordered table-striped dataTable" role="grid">
+				<thead align='left'>
+				<tr>
+				  <th>Table</th>
+				  <th>Type</th>
+				  <th>Column</th>				  
+				  <th>Type</th>
+				  <th>Size</th>
+				  <th title='Are nulls allowed?'>Nulls</th>
+				  <th title='Is column automatically updated?'>Auto</th>
+				  <th title='Default value'>Default</th>
+				  <th title='Comments' class="toggle"><span>Comments</span></th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				 <td>justificativas_proposta</td>
+				 <td>Table</td>
+				 <td>PUBLICO_ALVO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Público alvo da proposta</p></td>
+				</tr>
+				<tr>
+				 <td>desbloqueio_cr</td>
+				 <td>Table</td>
+				 <td>DATA_CADASTRO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de Cadastro</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>ENDERECO_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Endereço do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>RAZAO_SOCIAL_EMPRESA_EXECUTORA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Razão Social do Executor do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>UND_FORNECIMENTO_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Unidade de fornecimento vinculada a etapa</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_acffo_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_ACFFO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela acffo</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_metas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DESCRICAO_SUBITEM_INVESTIMENTO_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do Subitem de Investimento</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>OBRA_ACOMPANHADA_POR_EVENTO_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicador de acompanhamento de eventos</p></td>
+				</tr>
+				<tr>
+				 <td>consorcios</td>
+				 <td>Table</td>
+				 <td>CNPJ_PARTICIPANTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CNPJ dos Participantes do Consórcio</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>DIA_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data do cadastro da Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>empenho_desembolso</td>
+				 <td>Table</td>
+				 <td>VALOR_GRUPO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor presente nos dados orçamentários da OB</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento_tributo</td>
+				 <td>Table</td>
+				 <td>VL_PAG_TRIBUTOS</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor do tributo</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_metas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_QCI_ACFFO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela acffo_qci</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>TP_PROCESSO_COMPRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Processo de Compras: Dispensa de Licitação, Inexigibilidade, Licitação, Cotação Prévia, Pesquisa de Mercado</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_valores_itens_medicao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_EXECUCAO_FISICA_ACUMULADA_EMPRESA_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Somatório do Valor Acumulado da Execução Física por parte da Empresa da Obra</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>SIT_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação atual da Proposta. Domínio pode ser: Proposta/Plano de Trabalho Cadastrados, Proposta/Plano de Trabalho em Análise, Proposta/Plano de Trabalho Rejeitados, Proposta/Plano de Trabalho Aprovados, etc</p></td>
+				</tr>
+				<tr>
+				 <td>termo_aditivo</td>
+				 <td>Table</td>
+				 <td>JUSTIFICATIVA_TA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Justificativa para a realização do Termo Aditivo</p></td>
+				</tr>
+				<tr>
+				 <td>justificativas_proposta</td>
+				 <td>Table</td>
+				 <td>RELACAO_PROPOSTA_OBJETIVOS_PRO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Relação entre a proposta e os objetivos e diretrizes do programa</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_contratos_medicoes_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_MEDICAO_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número Sequencial da Medição</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>MES</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Mês em que o Convênio foi assinado</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_contratos_medicoes_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela proposta</p></td>
+				</tr>
+				<tr>
+				 <td>desembolso</td>
+				 <td>Table</td>
+				 <td>NR_SIAFI</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número do Documento no SIAFI</p></td>
+				</tr>
+				<tr>
+				 <td>emenda</td>
+				 <td>Table</td>
+				 <td>VALOR_REPASSE_PROPOSTA_EMENDA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor da Emenda cadastrada na proposta</p></td>
+				</tr>
+				<tr>
+				 <td>empenho</td>
+				 <td>Table</td>
+				 <td>TIPO_NOTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código do Tipo de Empenho</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VL_RENDIMENTO_APLICACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valores referentes aos redimentos de aplicação financeira</p></td>
+				</tr>
+				<tr>
+				 <td>termo_aditivo</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_proposta_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA_ACFFO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela acffo_proposta</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>COD_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Chave que identifica o programa composta por: (Cód.Órgão+Ano+Cód.Sequencial do Sistema)</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_PREVISAO_INICIO_OBRA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de Previsão do Início da Obra do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>QTD_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade da Meta</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>DESC_ORGAO_SUP_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome do Órgão executor do Programa</p></td>
+				</tr>
+				<tr>
+				 <td>cronograma_desembolso</td>
+				 <td>Table</td>
+				 <td>MES_CRONO_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Mês do Desembolso</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VL_SALDO_CONTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>O Saldo em Conta deve ser entendido como um valor estimado, podendo sofrer variação até o próximo dia útil, principalmente, pelo fato dos rendimentos de aplicação previstos fazerem parte do referido valor.</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>SITUACAO_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação atual do Projeto Básico/Termo de Referência. Domínio: Aguardando Projeto Básico, Não Cadastrado, Projeto Básico Aprovado, Projeto Básico em Análise, Projeto Básico em Complementação, Projeto Básico Rejeitado</p></td>
+				</tr>
+				<tr>
+				 <td>historico_situacao</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>IDENTIFICACAO_EMPRESA_EXECUTORA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CPF ou CNPJ do Executor do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>VALOR_UNITARIO_ITEM</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor unitário do item</p></td>
+				</tr>
+				<tr>
+				 <td>desembolso</td>
+				 <td>Table</td>
+				 <td>VL_DESEMBOLSADO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor disponibilizado pelo Governo Federal para a conta do instrumento</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>SIT_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação atual do Convênio. Domínio: Em execução, Convênio Anulado, Prestação de Contas enviada para Análise, Prestação de Contas Aprovada, Prestação de Contas em Análise, Prestação de Contas em Complementação, Inadimplente, etc</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>DIA_INIC_VIGENCIA_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Início da Vigência da Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_contratos_medicoes_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_INICIO_OBRA_CONTRATO_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de Início da Obra do Contrato</p></td>
+				</tr>
+				<tr>
+				 <td>desbloqueio_cr</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_proposta_aio_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ID_AIO_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela instrumentos_contratuais_VBL.aio</p></td>
+				</tr>
+				<tr>
+				 <td>ingresso_contrapartida</td>
+				 <td>Table</td>
+				 <td>VL_INGRESSO_CONTRAPARTIDA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor disponibilizado pelo Convenente para a conta do instrumento</p></td>
+				</tr>
+				<tr>
+				 <td>empenho</td>
+				 <td>Table</td>
+				 <td>VALOR_EMPENHO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor empenhado</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>DATA_PUBLICACAO_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de publicação do Processo de Execução</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DESCRICAO_SUBITEM_INVESTIMENTO_META_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do Subitem de Investimento</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DIA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Dia em que o Convênio foi assinado</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_CONTRATO_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela instrumentos_contratuais_VBL.contrato</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_acffo_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>APELIDO_EMPREENDIMENTO_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Apelido do empreendimento</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DIAS_PREST_CONTAS</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Pazo para a Prestação de Contas do Convênio</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>DESC_ORGAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome do Órgão ou Entidade Concedente</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>MOTIVO_SUSPENSAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do motivo de suspensão referente a cláusula suspensiva</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DESCRICAO_SUBMETA_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição da fase de Análise</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>SIT_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação atual do Programa. Domínio: Cadastrado; Disponibilizado; Inativo</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>UF_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>UF cadastrada para a Meta</p></td>
+				</tr>
+				<tr>
+				 <td>historico_situacao</td>
+				 <td>Table</td>
+				 <td>COD_HISTORICO_SIT</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código da situação histórica da Proposta/Convênio, contendo a ordem cronológica do ciclo de vida de um convênio</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>DATA_FIM_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data fim prevista para execução da etapa</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento</td>
+				 <td>Table</td>
+				 <td>NOME_FORNECEDOR</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome do Fornecedor</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DIA_INIC_VIGENC_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de Início de Vigência do Convênio</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>SIT_ITEM</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação atual do Item. Domínio: APROVADO</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_proposta_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_PARECER_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação do Parecer do VRPL</p></td>
+				</tr>
+				<tr>
+				 <td>desbloqueio_cr</td>
+				 <td>Table</td>
+				 <td>DATA_ENVIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de envio da solicitação de desbloqueio do recurso</p></td>
+				</tr>
+				<tr>
+				 <td>termo_aditivo</td>
+				 <td>Table</td>
+				 <td>VL_REPASSE_TA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor de Repasse referente ao TA</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>COD_ORGAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código do Órgão ou Entidade Concedente</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>NATUREZA_JURIDICA_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Natureza Jurídica Atendida pelo Programa. Domínio: Administração Pública Estadual ou do Distrito Federal, Administração Pública Municipal, Consórcio Público, Empresa pública/Sociedade de economia mista e Organização da Sociedade Civil</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>QUANTIDADE_ITENS_META_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade de itens da Meta da Análise</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>QTD_TA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade de Termos Aditivos</p></td>
+				</tr>
+				<tr>
+				 <td>termo_aditivo</td>
+				 <td>Table</td>
+				 <td>TIPO_TA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Tipo do Termo Aditivo</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_proposta_aio_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela proposta</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>VL_GLOBAL_PROP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor Global da proposta cadastrada (Valor de Repasse Proposta + Valor Contrapartida Proposta)</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>MODALIDADE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Modalidade da Proposta. Domínio pode ser: CONTRATO DE REPASSE, CONVENIO, TERMO DE COLABORACAO, TERMO DE FOMENTO e TERMO DE PARCERIA</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>ENDERECO_ITEM</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Endereço cadastrado referente a localidade do item</p></td>
+				</tr>
+				<tr>
+				 <td>obtv_convenente</td>
+				 <td>Table</td>
+				 <td>IDENTIF_FAVORECIDO_OBTV_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CNPJ/CPF do Favorecido recebedor do pagamento</p></td>
+				</tr>
+				<tr>
+				 <td>empenho</td>
+				 <td>Table</td>
+				 <td>DESC_TIPO_NOTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do Tipo de Empenho. Domínio: Empenho Original, Empenho de Despesa Pré-Empenhada, Anulação de Empenho, Reforço de Empenho, Estorno de Anulação de Empenho, etc</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>ITEM_INVESTIMENTO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Itens de Investimento da proposta</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_valores_itens_medicao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_EXECUCAO_FISICA_ACUMULADA_CONCEDENTE_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Somatório do Valor Acumulado da Execução Física por parte do Concedente da Obra</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>IND_ASSINADO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicativo se o Convênio está assinado ou não. Domínio: SIM, NÃO</p></td>
+				</tr>
+				<tr>
+				 <td>desembolso</td>
+				 <td>Table</td>
+				 <td>QTD_DIAS_SEM_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicador de dias sem desembolso. Domínio: 90,180 e 365 dias</p></td>
+				</tr>
+				<tr>
+				 <td>prorroga_oficio</td>
+				 <td>Table</td>
+				 <td>DT_FIM_PRORROGA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Fim de Vigência do Prorroga de Ofício</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VL_SALDO_REMAN_TESOURO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valores devolvidos ao Tesouro ao término do instrumento</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>VL_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor da Meta</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_lae_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>EMISSAO_LAE_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Emissão da LAE do Projeto Básico</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>UF_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Ufs Habilitadas para o Programa. Domínio: AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO, <null>. Quando o valor é nulo, o programa atende a todo o Brasil</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>SITUACAO_ACEITE_PROCESSO_EXECU</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação do aceite do processo de execução</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>QTD_ITEM</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade de Itens</p></td>
+				</tr>
+				<tr>
+				 <td>historico_situacao</td>
+				 <td>Table</td>
+				 <td>DIAS_HISTORICO_SIT</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Dias em que a Proposta/Convênio permaneceu na situação</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>NATUREZA_JURIDICA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Natureza Jurídica do Proponente. Domínio: Administração Pública Estadual ou do Distrito Federal, Administração Pública Municipal, Consórcio Público, Empresa pública/Sociedade de economia mista e Organização da Sociedade Civil</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>IND_OPERA_OBTV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicativo de que o Convênio opera com OBTV. Domínio: SIM, NÃO</p></td>
+				</tr>
+				<tr>
+				 <td>termo_aditivo</td>
+				 <td>Table</td>
+				 <td>DT_INICIO_TA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Início de Vigência do Termo Aditivo</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_contratos_medicoes_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_INICIO_MEDICAO_OBJETO_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Inicial da Medição</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela instrumentos_contratuais_VBL.proposta</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>SITUACAO_CONTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação atual da conta bancária do instrumento. Domínio: Aguardando Retorno do Banco, Enviada, Cadastrada, Registrada, Erro na Abertura de Conta, Regularizada, A Verificar, Aguardando Envio e Pendente de Regularização</p></td>
+				</tr>
+				<tr>
+				 <td>empenho_desembolso</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_EMPENHO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único gerado pelo Sistema para o Empenho</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>UND_FORNECIMENTO_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Unidade de Fornecimento da Meta</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>UF_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>UF cadastrada para a Etapa</p></td>
+				</tr>
+				<tr>
+				 <td>prorroga_oficio</td>
+				 <td>Table</td>
+				 <td>NR_PRORROGA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número do Prorroga de Ofício</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_META_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Meta da Análise</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DIAS_CLAUSULA_SUSPENSIVA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade de dias calculado a partir da diferença entre as datas de previsão para resolução da Cláusula Suspensiva e da data de assinatura do instrumento</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>QUANTIDADE_MESES_DURACAO_OBRA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade de meses de duração da obra</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>COD_NATUREZA_DESPESA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>O campo que se refere à natureza da despesa contém um código composto por oito algarismos, sendo que o 1º dígito representa a categoria econômica, o 2º o grupo de natureza da despesa, o 3º e o 4º dígitos representam a modalidade de aplicação, o 5º e o 6º o elemento de despesa e o 7º e o 8º dígitos representam o desdobramento facultativo do elemento de despesa (subelemento).</p></td>
+				</tr>
+				<tr>
+				 <td>desembolso</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>NR_PROCESSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número interno do processo físico do instrumento</p></td>
+				</tr>
+				<tr>
+				 <td>obtv_convenente</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_MOV_FIN</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número identificador da movimentação financeira</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_contratos_medicoes_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_MEDICAO_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicador da Situação da Medição</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>ACAO_ORCAMENTARIA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Ação Orçamentária</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>DIA_FIM_VIGENCIA_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Fim da Vigência da Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_metas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_META_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Meta</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SIGLA_LOCALIDADE_PO_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Sigla da Localidade do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>desbloqueio_cr</td>
+				 <td>Table</td>
+				 <td>NR_OB</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da OB</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>DESCRICAO_ITEM</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do Item</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_metas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_META_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela acffo_meta</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VL_INGRESSO_CONTRAPARTIDA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Total de valores referente a ingresso de contrapartida dos Instrumentos</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>NOME_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do Programa de Governo</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATABASE_PO_VRPL_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data-base do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_proposta_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_GLOBAL_PROPOSTA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor Global da Proposta do Projeto Básico</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_lotes_fornecedores_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ID_LOTE_LICITACAO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela vrpl_lote_licitacao</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>MUNICIPIO_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Município cadastrado para a Meta</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_FIM_VIGENCIA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data do Fim da Vigência do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>emenda</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>QTD_PRORROGA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade de Prorrogas de Ofício</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>ANO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Ano Assinatura do Convênio</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela vrpl_proposta</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ID_LOTE_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela instrumentos_contratuais_VBL.lote</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DIA_PUBL_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data da Publicação do Convênio</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ID_META_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela instrumentos_contratuais_VBL.meta</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>MODALIDADE_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Modalidade do Programa. Domínio pode ser: CONTRATO DE REPASSE, CONVENIO, TERMO DE COLABORACAO, TERMO DE FOMENTO e TERMO DE PARCERIA</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento</td>
+				 <td>Table</td>
+				 <td>TP_MOV_FINANCEIRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Tipo da movimentação financeira realizada. Domínio: Pagamento a favorecido, Pagamento a favorecido com OBTV</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_OUTROS_SUBMETA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor Outros</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>MUNIC_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Município do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>NR_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Etapa gerada pelo Sistema</p></td>
+				</tr>
+				<tr>
+				 <td>historico_projeto_basico</td>
+				 <td>Table</td>
+				 <td>SITUACAO_HIST_PB_TR</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação do acompanhamento, valores possiveis ELA(Em Elaboracao), ANL (Em Análise), SCP (Complementação Solicitada), COM (Em complementacao), ACT (Aceita)</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_META_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela acffo_meta</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela licitação</p></td>
+				</tr>
+				<tr>
+				 <td>historico_projeto_basico</td>
+				 <td>Table</td>
+				 <td>EVENTO_HIST_PB_TR</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicador do Evento</p></td>
+				</tr>
+				<tr>
+				 <td>cronograma_desembolso</td>
+				 <td>Table</td>
+				 <td>TIPO_RESP_CRONO_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Tipo do Responsável definido no Cronograma de Desembolsos. Domínio: Concedente, Convenente e Rendimento de Aplicação</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATABASE_OBRA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data-base da PO</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DIA_FIM_VIGENC_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de Fim de Vigência do Convênio</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_LOTE_LICITACAO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número do Lote Associado</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento</td>
+				 <td>Table</td>
+				 <td>VL_PAGO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor do pagamento</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>DATA_FIM_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de término da Meta</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_SUBMETA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Submeta do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>TIPO_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Tipo da Meta: NORMAL/APLICAÇÃO</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>DESC_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Especificação da Meta do Cronograma Físico</p></td>
+				</tr>
+				<tr>
+				 <td>historico_situacao</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>justificativas_proposta</td>
+				 <td>Table</td>
+				 <td>CAPACIDADE_TECNICA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Capacidade Técnica e Gerencial da proposta</p></td>
+				</tr>
+				<tr>
+				 <td>desbloqueio_cr</td>
+				 <td>Table</td>
+				 <td>TIPO_RECURSO_DESBLOQUEIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Tipo do Recurso. Domínio: OB, INGRESSO CONTRAPARTIDA e RENDIMENTO APLICAÇÃO</p></td>
+				</tr>
+				<tr>
+				 <td>desembolso</td>
+				 <td>Table</td>
+				 <td>ANO_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Ano da Ordem Bancária</p></td>
+				</tr>
+				<tr>
+				 <td>empenho</td>
+				 <td>Table</td>
+				 <td>DATA_EMISSAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de emissão do Empenho</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DESCRICAO_META_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição da Meta do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>DT_PROG_FIM_RECEB_PROP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Fim para o recebimento das propostas voluntárias para o Programa</p></td>
+				</tr>
+				<tr>
+				 <td>ingresso_contrapartida</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>emenda</td>
+				 <td>Table</td>
+				 <td>QUALIF_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Qualificação do proponente</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>DT_PROG_FIM_BENEF_ESP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Fim para o recebimento das propostas de beneficiário específico para o Programa</p></td>
+				</tr>
+				<tr>
+				 <td>justificativas_proposta</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>NATUREZA_DESPESA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Natureza da Despesa referente ao item</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>ENDERECO_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Endereço cadastrado para a Etapa</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>VALOR_TOTAL_ITEM</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor total do item</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>MODALIDADE_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Modalidade, depende do Recurso Nacional ou Internacional:Recurso - Lei 8.666/1993: Convite, Tomada de Preços, Concorrência e Concurso. Recurso - Lei 10.520/2002 - Pregão: Pregão</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Meta</p></td>
+				</tr>
+				<tr>
+				 <td>empenho</td>
+				 <td>Table</td>
+				 <td>NR_EMPENHO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Nota de Empenho</p></td>
+				</tr>
+				<tr>
+				 <td>desembolso</td>
+				 <td>Table</td>
+				 <td>DATA_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data da Ordem Bancária</p></td>
+				</tr>
+				<tr>
+				 <td>proponentes</td>
+				 <td>Table</td>
+				 <td>CEP_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CEP do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_TOTAL_LICITADO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor total licitado</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>NOME_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do Programa de Governo</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VL_EMPENHADO_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor total empenhado do Governo Federal para os Instrumentos</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>ENVIADA_MANDATARIA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Campo que indica se o Contrato de Repasse foi enviado para Instituição Mandatária. Domínio: SIM, NÃO e NÃO APLICÁVEL</p></td>
+				</tr>
+				<tr>
+				 <td>consorcios</td>
+				 <td>Table</td>
+				 <td>DESC_CNAE_PRIMARIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do CNAE Primário na Receita Federal</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DIA_FIM_VIGENC_ORIGINAL_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de Fim de Vigência Original do Convênio sem os TAs e Prorrogas</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DIA_LIMITE_PREST_CONTAS</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data limite para Prestação de Contas do Convênio</p></td>
+				</tr>
+				<tr>
+				 <td>proponentes</td>
+				 <td>Table</td>
+				 <td>TELEFONE_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Telefone do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento</td>
+				 <td>Table</td>
+				 <td>NR_DL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número identificador do Documento de Liquidação</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>SISTEMA_ORIGEM</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome do Sistema de Origem da Licitação</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ACOMPANHADO_POR_EVENTO_PO_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicador se o PO é acompanhado por eventos no Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_SUBMETA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela acffo_submeta</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DESCRICAO_SUBMETA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição da Submeta</p></td>
+				</tr>
+				<tr>
+				 <td>cronograma_desembolso</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_lae_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_LAE_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação da LAE do Projeto Básico</p></td>
+				</tr>
+				<tr>
+				 <td>desbloqueio_cr</td>
+				 <td>Table</td>
+				 <td>VL_TOTAL_DESBLOQUEIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor total de desbloqueio para o Contrato de Repasse</p></td>
+				</tr>
+				<tr>
+				 <td>proponentes</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>IDENTIF_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CNPJ do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>UNIDADE_ITEM_INVESTIMENTO_META_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código da unidade do item</p></td>
+				</tr>
+				<tr>
+				 <td>empenho_desembolso</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único gerado pelo Sistema para o Desembolso</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_lae_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela proposta</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_lotes_fornecedores_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>RAZAO_SOCIAL_FORNECEDOR_LICITACAO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Razão Social do Fornecedor</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_SUBMETA_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Submeta da fase de Análise</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>UG_EMITENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Unidade Gestora</p></td>
+				</tr>
+				<tr>
+				 <td>historico_situacao</td>
+				 <td>Table</td>
+				 <td>DIA_HISTORICO_SIT</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de entrada da situação no sistema</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>cronograma_desembolso</td>
+				 <td>Table</td>
+				 <td>VALOR_PARCELA_CRONO_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor da Parcela do Desembolso</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_lotes_fornecedores_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>TIPO_IDENTIFICACAO_FORNECEDOR_LICITACAO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Informa se a identificação é CPF ou CNPJ</p></td>
+				</tr>
+				<tr>
+				 <td>obtv_convenente</td>
+				 <td>Table</td>
+				 <td>TP_AQUISICAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Tipo de Aquisição</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_proposta_aio_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_EMISSAO_AIO_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de Emissão do AIO</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ID_META_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela vrpl_meta</p></td>
+				</tr>
+				<tr>
+				 <td>prorroga_oficio</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_SUBMETA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela instrumentos_contratuais_VBL.submeta</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>CEP_ITEM</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CEP cadastrado referente a localidade do item</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>ENDERECO_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Endereço cadastrado para a Meta</p></td>
+				</tr>
+				<tr>
+				 <td>prorroga_oficio</td>
+				 <td>Table</td>
+				 <td>DT_ASSINATURA_PRORROGA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de assinatura do Prorroga de Ofício</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>DESC_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Especificação da etapa vinculada a meta do cronograma físico</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>SITUACAO_SISTEMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição da Situação da Licitação no Sistema de Compras Externo</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_proposta_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Sigla da Situação da Documentação</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_PREVISAO_INICIO_OBRA_PO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de previsão do início da obra do VRPL</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_contratos_medicoes_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_MEDICAO_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela med_medicao</p></td>
+				</tr>
+				<tr>
+				 <td>consorcios</td>
+				 <td>Table</td>
+				 <td>NOME_PARTICIPANTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do nome dos participantes do Consórcio</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DATA_RETIRADA_SUSPENSIVA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de retirada do instrumento da situação de Cláusula Suspensiva</p></td>
+				</tr>
+				<tr>
+				 <td>obtv_convenente</td>
+				 <td>Table</td>
+				 <td>VL_PAGO_OBTV_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor pago ao favorecido</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_valores_itens_medicao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_EXECUCAO_FISICA_ACUMULADA_TOTAL_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Somatório do Valor Total Acumulado da Execução Física da Obra</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>DESC_ORGAO_SUP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome do Órgão Superior do Concedente</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_metas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DESCRICAO_META_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição da Meta</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_valores_itens_medicao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_SUBMETA_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela med_submeta_medicao</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>emenda</td>
+				 <td>Table</td>
+				 <td>IND_IMPOSITIVO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicativo de Orçamento Impositivo (Tipo Parlamentar igual a INDIVIDUAL + Ano de Cadastro da Proposta &gt;= 2014). Domínio: SIM, NÃO</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>STATUS_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Status: "Concluído", "Em Elaboração"</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_contratos_medicoes_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ID_CONTRATO_MEDICAO_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela med_contrato</p></td>
+				</tr>
+				<tr>
+				 <td>termo_aditivo</td>
+				 <td>Table</td>
+				 <td>VL_GLOBAL_TA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor Global referente ao TA</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_lae_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_ACFFO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela acffo</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Meta</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_acffo_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_ACEITE_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data do aceite do Projeto Básico</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_acffo_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ULTIMA_VERSAO_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da versão atual do Projeto Básico</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_proposta_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela vrpl_proposta</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_contratos_medicoes_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_FIM_MEDICAO_OBJETO_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Final da Medição</p></td>
+				</tr>
+				<tr>
+				 <td>desembolso</td>
+				 <td>Table</td>
+				 <td>MES_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Mês da Ordem Bancária</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_LOTE_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número do Lote do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>NR_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número do Processo de Execução</p></td>
+				</tr>
+				<tr>
+				 <td>desembolso</td>
+				 <td>Table</td>
+				 <td>DT_ULT_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data da última Ordem Bancária gerada</p></td>
+				</tr>
+				<tr>
+				 <td>proponentes</td>
+				 <td>Table</td>
+				 <td>NM_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome da Entidade Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VL_GLOBAL_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor global dos Instrumentos assinados (Valor de Repasse + Valor Contrapartida)</p></td>
+				</tr>
+				<tr>
+				 <td>termo_aditivo</td>
+				 <td>Table</td>
+				 <td>DT_FIM_TA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Fim de Vigência do Termo Aditivo</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DESCRICAO_SUBMETA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição da Submeta do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>INSTRUMENTO_ATIVO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Convênios que ainda não foram finalizados. Domínio: SIM, NÃO</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATABASE_PO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data-base preenchida no VRPL</p></td>
+				</tr>
+				<tr>
+				 <td>consorcios</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>historico_situacao</td>
+				 <td>Table</td>
+				 <td>HISTORICO_SIT</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação histórica da Proposta/Convênio</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>NR_PROCESSO_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número do Processo informado pelo usuário</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_lotes_fornecedores_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_LOTE_LICITACAO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número do Lote Associado</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_contratos_medicoes_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>QTD_DIAS_SEM_MEDICAO_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade de Dias sem Medição no Acompanhamento da Obra</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_proposta_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela proposta</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_TOTAL_LICITADO_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor Total Licitado do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VL_CONTRAPARTIDA_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor total da Contrapartida que será disponibilizada pelo convenente</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_proposta_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ULTIMA_VERSAO_PROPOSTA_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Versão atual da Proposta do VRPL</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_proposta_aio_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_AIO_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação da Emissão do AIO</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_proposta_aio_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela instrumentos_contratuais_VBL.proposta</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>MUNICIPIO_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Município cadastrado para a Etapa</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>NM_BANCO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome do Banco para depósito do recurso da Transferência Voluntária</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>DIA_PROP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Dia do cadastro da Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>desbloqueio_cr</td>
+				 <td>Table</td>
+				 <td>VL_DESBLOQUEADO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor desbloqueado para o Contrato de Repasse</p></td>
+				</tr>
+				<tr>
+				 <td>emenda</td>
+				 <td>Table</td>
+				 <td>BENEFICIARIO_EMENDA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CNPJ do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_metas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>UNIDADE_ITEM_INVESTIMENTO_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código da unidade de fornecimento</p></td>
+				</tr>
+				<tr>
+				 <td>emenda</td>
+				 <td>Table</td>
+				 <td>VALOR_REPASSE_EMENDA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor da Emenda assinada</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>SITUACAO_PUBLICACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação atual da Publicação do instrumento. Domínio: Publicado e Transferido para IN</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_acffo_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela proposta</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_SUBMETA_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela vrpl_submeta</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>UF_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>UF do Proponente. Domínio: AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_lae_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_QCI_ACFFO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela acffo_qci</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_lotes_fornecedores_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>IDENTIFICACAO_FORNECEDOR_LICITACAO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CPF ou CNPJ do Fornecedor</p></td>
+				</tr>
+				<tr>
+				 <td>historico_projeto_basico</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>termo_aditivo</td>
+				 <td>Table</td>
+				 <td>DT_ASSINATURA_TA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data da assinatura do Termo Aditivo</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento_tributo</td>
+				 <td>Table</td>
+				 <td>DATA_TRIBUTO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data da realização do pagamento do tributo</p></td>
+				</tr>
+				<tr>
+				 <td>prorroga_oficio</td>
+				 <td>Table</td>
+				 <td>DIAS_PRORROGA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Dias de prorrogação</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>DATA_INICIO_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de início prevista para execução da etapa</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SIGLA_LOCALIDADE_OBRA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Sigla da localidade</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>IND_FOTO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicativo se o Convênio possui foto ou não. Domínio: SIM, NÃO</p></td>
+				</tr>
+				<tr>
+				 <td>proponentes</td>
+				 <td>Table</td>
+				 <td>FAX_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Fax do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>prorroga_oficio</td>
+				 <td>Table</td>
+				 <td>DT_INICIO_PRORROGA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Início de Vigência do Prorroga de Ofício</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para um Programa</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_proposta_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_LICITACAO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela vrpl_licitacao</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>TIPO_IDENTIFICACAO_EMPRESA_EXECUTORA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Tipo de Identificação (CPF ou CNPJ) do Executor do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>DATA_HOMOLOGACAO_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de homologação do Processo de Execução</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>DT_PROG_INI_BENEF_ESP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Início para o recebimento das propostas de beneficiário específico para o Programa</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_INICIO_VIGENCIA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data do Início da Vigência do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>proponentes</td>
+				 <td>Table</td>
+				 <td>BAIRRO_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Bairro do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DESCRICAO_META_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição da Meta da Análise</p></td>
+				</tr>
+				<tr>
+				 <td>desbloqueio_cr</td>
+				 <td>Table</td>
+				 <td>VL_BLOQUEADO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor bloqueado para o Contrato de Repasse</p></td>
+				</tr>
+				<tr>
+				 <td>consorcios</td>
+				 <td>Table</td>
+				 <td>DESC_CNAE_SECUNDARIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do CNAE Secundário na Receita Federal</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_SUBMETA_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicador da Situação da Submeta</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>COD_ORGAO_SUP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código do Órgão Superior do Concedente</p></td>
+				</tr>
+				<tr>
+				 <td>cronograma_desembolso</td>
+				 <td>Table</td>
+				 <td>ANO_CRONO_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Ano do Desembolso</p></td>
+				</tr>
+				<tr>
+				 <td>proponentes</td>
+				 <td>Table</td>
+				 <td>MUNICIPIO_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Município do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>consorcios</td>
+				 <td>Table</td>
+				 <td>CODIGO_CNAE_PRIMARIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código do CNAE Primário na Receita Federal</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>VL_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor total da etapa vinculada a meta do cronograma físico</p></td>
+				</tr>
+				<tr>
+				 <td>emenda</td>
+				 <td>Table</td>
+				 <td>TIPO_PARLAMENTAR</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Tipo do Parlamentar. Domínio pode ser: INDIVIDUAL, COMISSAO, BANCADA</p></td>
+				</tr>
+				<tr>
+				 <td>termo_aditivo</td>
+				 <td>Table</td>
+				 <td>NUMERO_TA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número do Termo Aditivo</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_valores_itens_medicao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_EXECUCAO_FISICA_ACUMULADA_CONVENENTE_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Somatório do Valor Acumulado da Execução Física por parte do Convenente da Obra</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>NM_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome da Entidade Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VL_REPASSE_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor total do aporte do Governo Federal referente a celebração do Instrumento</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>ANO_PROP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Ano do cadastro da Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento</td>
+				 <td>Table</td>
+				 <td>DESC_DL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do Documento de Liquidação. Domínio: DIÁRIAS, DUPLICATA, FATURA, FOLHA DE PAGAMENTO, NOTA FISCAL, NOTA FISCAL / FATURA, OBTV PARA EXECUTOR, OBTV PARA O CONVENENTE, etc</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VALOR_GLOBAL_ORIGINAL_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor Global Original do Instrumento</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_valores_itens_medicao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ID_CONTRATO_MEDICAO_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela med_contrato</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>OBJETO_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição do Objeto da Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>DATA_ENCERRAMENTO_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de encerramento do Processo de Execução</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>COD_MUNIC_IBGE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código IBGE do Município</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_TOTAL_SUBMETA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor Total</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>ANO_DISPONIBILIZACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Ano de disponibilização do Programa</p></td>
+				</tr>
+				<tr>
+				 <td>proponentes</td>
+				 <td>Table</td>
+				 <td>EMAIL_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>E-mail do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>DATA_ABERTURA_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de abertura do Processo de Execução</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_metas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>QUANTIDADE_ITENS_META_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade de itens da Meta</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>COD_ORGAO_SUP_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código do Órgão executor do Programa</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>CEP_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CEP cadastrado para a Etapa</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>DATA_INICIO_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de início da Meta</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela instrumentos_contratuais_VBL.proposta</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>TIPO_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Tipo da Licitação: depende da modalidade.Modalidade Convite: Menor Valor.Modalidade Tomada de Preço: Menor Preço, Melhor Técnica, Técnica e Preço.Modalidade Concorrência: Internacional, Menor Preço, Melhor Técnica e Técnica e Preço.Modalidade Pregão: Eletrônico, Eletrônico para Registro de Preço, Eletrônico por Maior Desconto, Eletrônico por Lote (grupo de itens), Presencial, Presencial para Registro de Preço, Presencial por Maior Desconto</p></td>
+				</tr>
+				<tr>
+				 <td>consorcios</td>
+				 <td>Table</td>
+				 <td>CODIGO_CNAE_SECUNDARIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código do CNAE Secundário na Receita Federal</p></td>
+				</tr>
+				<tr>
+				 <td>emenda</td>
+				 <td>Table</td>
+				 <td>NR_EMENDA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Emenda Parlamentar</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_acffo_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situacao do Projeto Básico</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>DATA_DISPONIBILIZACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de disponibilização do Programa</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento_tributo</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>VL_REPASSE_PROP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor de Repasse do Governo Federal referente a proposta cadastrada</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>ID_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Etapa</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_lae_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_EMISSAO_LAE_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de Emissão da LAE do Projeto Básico</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>COD_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Chave que identifica o programa composta por: (Cód.Órgão+Ano+Cód.Sequencial do Sistema)</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>MUNICIPIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Município cadastrado referente a localidade do item</p></td>
+				</tr>
+				<tr>
+				 <td>cronograma_desembolso</td>
+				 <td>Table</td>
+				 <td>NR_PARCELA_CRONO_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Parcela do Desembolso</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_acffo_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_SPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação do SPA</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_metas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NOME_ITEM_INVESTIMENTO_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome do Item de Investimento</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento</td>
+				 <td>Table</td>
+				 <td>IDENTIF_FORNECEDOR</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CNPJ/CPF do Fornecedor</p></td>
+				</tr>
+				<tr>
+				 <td>etapa_crono_fisico</td>
+				 <td>Table</td>
+				 <td>QTD_ETAPA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade da etapa vinculada a meta do cronograma físico.</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>LOTE_SUBMETA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número do Lote</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento</td>
+				 <td>Table</td>
+				 <td>DATA_PAG</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data da realização do pagamento</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_CONTRAPARTIDA_SUBMETA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor da Contrapartida</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DATA_SUSPENSIVA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data prevista para resolução da Cláusula Suspensiva</p></td>
+				</tr>
+				<tr>
+				 <td>empenho</td>
+				 <td>Table</td>
+				 <td>DESC_SITUACAO_EMPENHO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Descrição da Situação atual do empenho. Domínio: Registrado no SIAFI e Enviado</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>DIA_ASSIN_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Assinatura do Convênio</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_ASSINATURA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de Assinatura do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>emenda</td>
+				 <td>Table</td>
+				 <td>NOME_PARLAMENTAR</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome do Parlamentar</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>IDENTIF_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CNPJ do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_MOV_FIN</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número identificador da movimentação financeira</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>CEP_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CEP do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VL_DESEMBOLSADO_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor total desembolsado do Governo Federal para a conta do Instrumento</p></td>
+				</tr>
+				<tr>
+				 <td>historico_projeto_basico</td>
+				 <td>Table</td>
+				 <td>VERSAO_DOC_PB_TR</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Versão usada no sistema de versionamento</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ID_PO_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela instrumentos_contratuais_VBL.po</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>VL_SALDO_REMAN_CONVENENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valores devolvidos ao Convenente ao término do instrumento</p></td>
+				</tr>
+				<tr>
+				 <td>programa_proposta</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROGRAMA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para um Programa</p></td>
+				</tr>
+				<tr>
+				 <td>empenho</td>
+				 <td>Table</td>
+				 <td>COD_SITUACAO_EMPENHO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código da Situação atual do empenho</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_META_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Meta do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>VL_CONTRAPARTIDA_PROP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor da Contrapartida apresentada na proposta pelo convenente</p></td>
+				</tr>
+				<tr>
+				 <td>obtv_convenente</td>
+				 <td>Table</td>
+				 <td>NM_FAVORECIDO_OBTV_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Nome do Favorecido recebedor do pagamento</p></td>
+				</tr>
+				<tr>
+				 <td>consorcios</td>
+				 <td>Table</td>
+				 <td>NOME_CONSORCIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Razão Social do Consórcio</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_PREVISAO_INICIO_OBRA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de previsão do início da obra</p></td>
+				</tr>
+				<tr>
+				 <td>justificativas_proposta</td>
+				 <td>Table</td>
+				 <td>CARACTERIZACAO_INTERESSES_RECI</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Caracterização dos interesses recíprocos da proposta</p></td>
+				</tr>
+				<tr>
+				 <td>proponentes</td>
+				 <td>Table</td>
+				 <td>ENDERECO_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Endereço do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SIGLA_LOCALIDADE_PO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Sigla da Localidade</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ACOMPANHADO_POR_EVENTO_PO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indica se PO é acompanhada por eventos</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>DT_PROG_INI_EMENDA_PAR</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Início para o recebimento das propostas de Emenda Parlamentar para o Programa</p></td>
+				</tr>
+				<tr>
+				 <td>justificativas_proposta</td>
+				 <td>Table</td>
+				 <td>PROBLEMA_A_SER_RESOLVIDO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Problema a ser resolvido pela proposta</p></td>
+				</tr>
+				<tr>
+				 <td>proponentes</td>
+				 <td>Table</td>
+				 <td>UF_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>UF do Proponente. Domínio: AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>NR_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Meta gerada pelo Sistema</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>DT_PROG_INI_RECEB_PROP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Início para o recebimento das propostas voluntárias para o Programa</p></td>
+				</tr>
+				<tr>
+				 <td>historico_projeto_basico</td>
+				 <td>Table</td>
+				 <td>DATA_HIST_PB_TR</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data de registro</p></td>
+				</tr>
+				<tr>
+				 <td>empenho</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_EMPENHO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único gerado pelo Sistema para o Empenho</p></td>
+				</tr>
+				<tr>
+				 <td>termo_aditivo</td>
+				 <td>Table</td>
+				 <td>VL_CONTRAPARTIDA_TA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor de Contrapartida referente ao TA</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>NUMERO_SUBMETA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Submeta</p></td>
+				</tr>
+				<tr>
+				 <td>acomp_obras_contratos_medicoes_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>CNPJ_FORNECEDOR_CONTRATO_ACOMPANHAMENTO_OBRA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CNJP do Fornecedor</p></td>
+				</tr>
+				<tr>
+				 <td>programa</td>
+				 <td>Table</td>
+				 <td>DT_PROG_FIM_EMENDA_PAR</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data Fim para o recebimento das propostas de Emenda Parlamentar para o Programa</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_metas_submetas_po_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_SUBMETA_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação da Submeta do Instrumento Contratual</p></td>
+				</tr>
+				<tr>
+				 <td>inst_cont_contratos_lotes_empresas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ID_LOTE_INSTRUMENTO_CONTRATUAL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela instrumentos_contratuais_VBL.lote</p></td>
+				</tr>
+				<tr>
+				 <td>consorcios</td>
+				 <td>Table</td>
+				 <td>CNPJ_CONSORCIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CNPJ do Consórcio</p></td>
+				</tr>
+				<tr>
+				 <td>licitacao</td>
+				 <td>Table</td>
+				 <td>VALOR_LICITACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor da Licitação</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>NATUREZA_AQUISICAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código de natureza de aquisição</p></td>
+				</tr>
+				<tr>
+				 <td>justificativas_proposta</td>
+				 <td>Table</td>
+				 <td>RESULTADOS_ESPERADOS</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Resultados esperados da proposta</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>VALOR_REPASSE_SUBMETA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Valor do Repasse</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_proposta_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_EMISSAO_PARECER_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data da Emissão do Parecer do VRPL</p></td>
+				</tr>
+				<tr>
+				 <td>projeto_basico_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>SITUACAO_SUBMETA_PROJETO_BASICO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicador da Situação</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>SUBSITUACAO_CONV</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Sub-Situação atual do Convênio. Domínio: Convênio, Convênio Cancelado, Convênio Encerrado, Proposta, Em aditivação</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>TIPO_DESPESA_ITEM</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Tipo da Despesa. Domínio: SERVICO, BEM, OUTROS, TRIBUTO, OBRA e DESPESA_ADMINISTRATIVA</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_proposta_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>EMISSAO_PARECER_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Indicador da Emissão do Parecer do VRPL</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>MES_PROP</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Mês do cadastro da Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>cronograma_desembolso</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>desembolso</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_DESEMBOLSO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único gerado pelo Sistema para o Desembolso</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_metas_submetas_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>ID_PO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela vrpl_po</p></td>
+				</tr>
+				<tr>
+				 <td>programa_proposta</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Código Sequencial do Sistema para uma Proposta</p></td>
+				</tr>
+				<tr>
+				 <td>prorroga_oficio</td>
+				 <td>Table</td>
+				 <td>SIT_PRORROGA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação atual do Prorroga de Ofício. Domínio: DISPONIBILIZADA, PUBLICADA</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_lotes_fornecedores_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_LICITACAO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title=''></td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela vrpl_licitacao</p></td>
+				</tr>
+				<tr>
+				 <td>emenda</td>
+				 <td>Table</td>
+				 <td>COD_PROGRAMA_EMENDA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Chave que identifica o programa composta por: (Cód.Órgão+Ano+Cód.Sequencial do Sistema)</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>SITUACAO_CONTRATACAO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Situação atual da Contratação. Domínio: Cláusula Suspensiva, Liminar Judicial, Normal e Sob Liminar Judicial e Cláusula Suspensiva</p></td>
+				</tr>
+				<tr>
+				 <td>plano_aplicacao_detalhado</td>
+				 <td>Table</td>
+				 <td>SIGLA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>UF cadastrada referente a localidade do item. Domínio: AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO</p></td>
+				</tr>
+				<tr>
+				 <td>ingresso_contrapartida</td>
+				 <td>Table</td>
+				 <td>DT_INGRESSO_CONTRAPARTIDA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data da disponibilização do recurso por parte do Convenente</p></td>
+				</tr>
+				<tr>
+				 <td>convenio</td>
+				 <td>Table</td>
+				 <td>QTDE_CONVENIOS</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Quantidade de Instrumentos Assinados</p></td>
+				</tr>
+				<tr>
+				 <td>pagamento</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>NR_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número da Proposta gerado pelo Siconv</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_proposta_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td>DATA_ACEITE_LICITACAO_VRPL</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Data do Aceite da Licitação</p></td>
+				</tr>
+				<tr>
+				 <td>vrpl_proposta_licitacao_modulo_empresas</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>ID_PROPOSTA</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Identificador único da tabela proposta</p></td>
+				</tr>
+				<tr>
+				 <td>meta_crono_fisico</td>
+				 <td>Table</td>
+				 <td>CEP_META</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>CEP cadastrado para a Meta</p></td>
+				</tr>
+				<tr>
+				 <td>proposta</td>
+				 <td>Table</td>
+				 <td>BAIRRO_PROPONENTE</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Bairro do Proponente</p></td>
+				</tr>
+				<tr>
+				 <td>empenho</td>
+				 <td>Table</td>
+				 <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i>NR_CONVENIO</td>
+				 <td>varchar</td>
+				 <td>2147483647</td>
+				 <td title='nullable'>√</td>
+				 <td title=''></td>
+				 <td>null</td>
+				 <td><p>Número gerado pelo Siconv. Possui faixa de numeração reservada que vai de 700000 a 999999</p></td>
+				</tr>
+								</tbody>
+				</table>				
+			</div>
+		</div>	
+      </section>    
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div>
+      <div class="pull-right hidden-xs">
+        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+      </div>
+      <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.0.0-rc2</a></strong>
+    </div>
+    <!-- /.container -->
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="bower/datatables.net/jquery.dataTables.min.js"></script>
+<script src="bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+<script src="bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.html5.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.print.min.js"></script>
+<script src="bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+
+<!-- SlimScroll -->
+<script src="bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+<!-- Salvattore -->
+<script src="bower/salvattore/salvattore.min.js"></script>
+<!-- AnchorJS -->
+<script src="bower/anchor-js/anchor.min.js"></script>
+<!-- CodeMirror -->
+<script src="bower/codemirror/codemirror.js"></script>
+<script src="bower/codemirror/sql.js"></script>
+<!-- AdminLTE App -->
+<script src="bower/admin-lte/dist/js/app.min.js"></script>
+<script src="column.js"></script>
+<script src="schemaSpy.js"></script>
+</body>
+</html>
